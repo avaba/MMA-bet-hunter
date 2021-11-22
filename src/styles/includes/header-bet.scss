@@ -1,0 +1,38 @@
+.header-bet {
+  margin-bottom: 40px;
+
+  &__subtitle {
+    color: #415B7A;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 3px;
+    display: block;
+  }
+
+  &__name {
+    color: #061629;
+    font-size: 32px;
+    font-weight: 300;
+    display: block;
+    margin: 0;
+
+    span {
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+
+  &__time {
+    font-size: 32px;
+    color: #061629;
+
+    span {
+      display: inline-block;
+      background: $accent;
+      font-weight: bold;
+    }
+  }
+}

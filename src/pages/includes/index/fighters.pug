@@ -1,0 +1,55 @@
+div.fighters
+  div.fighters__left
+    div.fighters-left-head Fighters
+    div.fighters-event.open
+      div.fighters-event__value
+        span.fighters-event__value-name Ян Блахович <span class="dash">—</span> Исраэль Адесанья
+        span.fighters-event__value-time 28.02.21 / 04:00 MSK / Основной Кард
+        span.fighters-event__value-arrow
+          <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1L7 7L1 1" stroke="#CED3DA" stroke-width="2"/>
+          </svg>
+      ul.fighters-event__list
+        - for (let x = 0; x < 4; x++)
+          li <span>Ян Блахович победит в 1-ом раунде</span>
+          li <span>Исраэль Адесанья победит во 2-ом раунде</span>
+    - for (let x = 0; x < 4; x++)
+      div.fighters-event
+        div.fighters-event__value
+          span.fighters-event__value-name Ян Блахович <span class="dash">—</span> Исраэль Адесанья
+          span.fighters-event__value-time 28.02.21 / 04:00 MSK / Основной Кард
+          span.fighters-event__value-arrow
+            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1L7 7L1 1" stroke="#CED3DA" stroke-width="2"/>
+            </svg>
+        ul.fighters-event__list
+          - for (let x = 0; x < 4; x++)
+          li <span>Ян Блахович победит в 1-ом раунде</span>
+          li <span>Исраэль Адесанья победит во 2-ом раунде</span>
+
+  div.fighters__right
+    div.fighters-right-head
+      div.fighters-right-head__col <img src="/img/fonbet.png"> Фонбет
+      div.fighters-right-head__col.active <img src="/img/1x.png"> 1xBet
+      - for (let x = 0; x < 3; x++)
+          div.fighters-right-head__col <img src="/img/fonbet.png"> Фонбет
+          div.fighters-right-head__col <img src="/img/1x.png"> 1xBet
+
+    div.fighters-bet.open
+      - for (let x = 0; x < 9; x++)
+        div.fighters-bet__row
+          - for (let x = 0; x < 8; x++)
+            div.fighters-bet__item
+              span.fighters-bet__num 1.70 <br> <span class="num">1</span>
+              span.fighters-bet__num 2.20 <br> <span class="num">2</span>
+
+    - for (let x = 0; x < 4; x++)
+      div.fighters-bet
+        - for (let x = 0; x < 9; x++)
+          div.fighters-bet__row
+            - for (let x = 0; x < 8; x++)
+              div.fighters-bet__item
+                span.fighters-bet__num 1.70 <br> <span class="num">1</span>
+                span.fighters-bet__num 2.20 <br> <span class="num">2</span>
+
+
