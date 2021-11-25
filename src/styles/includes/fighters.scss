@@ -4,6 +4,7 @@
   border-radius: 8px 8px 0 0;
   margin-left: 6vw;
   position: relative;
+  margin-bottom: 130px;
 
   &__left {
     min-width: 412px;
@@ -235,14 +236,62 @@
       text-align: center;
       font-weight: bold;
       font-size: 14px;
+      position: relative;
+
+      &.bot {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          left: 100%;
+          margin-left: 5px;
+          top: 3px;
+          width: 12px;
+          height: 10px;
+          background-image: url('/img/bot.svg');
+        }
+      }
+
+      &.top {
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          left: 100%;
+          margin-left: 5px;
+          top: 3px;
+          width: 12px;
+          height: 10px;
+          background-image: url('/img/top.svg');
+        }
+      }
+
+      &.red {
+        .fighters-bet__num-big {
+          background: #FF5B59;
+        }
+      }
+
+      &.green {
+        .fighters-bet__num-big {
+          background: #43D17C;
+        }
+      }
 
       &:last-of-type {
         margin-right: 0;
       }
 
-      .num {
+      &-big {
+        padding: 2px 4px;
+        display: inline-block;
+      }
+
+      &-small {
         font-size: 12px;
         color: #CED3DA;
+        display: block;
+        margin-top: 3px;
       }
     }
   }

@@ -40,8 +40,12 @@ div.fighters
         div.fighters-bet__row
           - for (let x = 0; x < 8; x++)
             div.fighters-bet__item
-              span.fighters-bet__num 1.70 <br> <span class="num">1</span>
-              span.fighters-bet__num 2.20 <br> <span class="num">2</span>
+              span.fighters-bet__num.bot.green
+                span.fighters-bet__num-big 1.70 <br>
+                span.fighters-bet__num-small 1
+              span.fighters-bet__num.top.red
+                span.fighters-bet__num-big 2.70 <br>
+                span.fighters-bet__num-small 2
 
     - for (let x = 0; x < 4; x++)
       div.fighters-bet
@@ -49,7 +53,11 @@ div.fighters
           div.fighters-bet__row
             - for (let x = 0; x < 8; x++)
               div.fighters-bet__item
-                span.fighters-bet__num 1.70 <br> <span class="num">1</span>
-                span.fighters-bet__num 2.20 <br> <span class="num">2</span>
+                span.fighters-bet__num
+                  span.fighters-bet__num-big 1.70 <br>
+                  span.fighters-bet__num-small 1
+                span.fighters-bet__num
+                  span.fighters-bet__num-big 3.70 <br>
+                  span.fighters-bet__num-small 2
 
 

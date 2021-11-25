@@ -1,0 +1,19 @@
+extends common/layout
+
+block content
+  main.predict
+    div.container
+      div.page-head
+        ul.page-head__breack
+          li.page-head__breack-item
+            a(href="#") Главная
+        h1.page-head__title Прогнозы
+
+      div.predict-wrap
+        - for (let x = 0; x < 12; x++)
+          a(href="#").predict-item
+            span.predict-item__title Ян Блахович — Исраэль Адесанья
+            span.predict-item__subtitle Основной Кард / 28.02.21 / 04:00 MSK
+            span.predict-item__text А вот по мнению аналитиков структура рынка притягивает фирменный стиль. Размещение стабилизирует сегмент рынка, не считаясь с затратами. Лидерство в продажах парадоксально обуславливает креативный целевой сегмент рынка.
+      div.more
+        button Показать ещё
